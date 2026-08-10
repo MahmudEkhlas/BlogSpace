@@ -4,7 +4,7 @@ const conf = {
     appwriteDatabaseId: (import.meta.env.VITE_APPWRITE_DATABASE_ID),
     appwriteTableId: (import.meta.env.VITE_APPWRITE_TABLE_ID),
     appwriteBucketId: (import.meta.env.VITE_APPWRITE_BUCKET_ID),
-    rteAPI_key :(import.meta.env.VITE_RTE_APIKEY)
+    rteAPIkey :(import.meta.env.VITE_RTE_APIKEY)
 }
 
 
