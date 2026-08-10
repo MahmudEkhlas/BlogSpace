@@ -54,4 +54,3 @@ function AllPosts() {
 }
 
 export default AllPosts
-//update check
