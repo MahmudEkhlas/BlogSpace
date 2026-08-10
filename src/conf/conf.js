@@ -7,6 +7,4 @@ const conf = {
     rteAPIkey :(import.meta.env.VITE_RTE_APIKEY)
 }
 
-
-
 export default conf;
