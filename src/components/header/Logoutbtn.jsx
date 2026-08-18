@@ -9,6 +9,7 @@ function Logoutbtn() {
         //Almost all the service of the Appwrite return promises
         authService.logout().then(() => {
             dispatch(logout())
+            navigate("/")
         })
     }
     return (
