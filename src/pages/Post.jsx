@@ -38,30 +38,65 @@ export default function Post() {
     return post ? (
         <div className="py-8">
             <Container>
-                <div className="w-full flex justify-center mb-4 relative border rounded-xl p-2">
-                    <img
-                        src={service.getFilePreview(post.featuredImage)}
-                        alt={post.title}
-                        className="rounded-xl"
-                    />
+                <div className="w-full mb-6  rounded-xl p-4">
 
-                    {isAuthor && (
-                        <div className="absolute right-6 top-6">
-                            <Link to={`/edit-post/${post.$id}`}>
-                                <Button bgColor="bg-green-500" className="mr-3">
-                                    Edit
-                                </Button>
-                            </Link>
-                            <Button bgColor="bg-red-500" onClick={deletePost}>
-                                Delete
-                            </Button>
+                    <div className="w-full flex items-start justify-between gap-6">
+
+                        {/* Image */}
+                        <div className="flex justify-start">
+                            <img
+                                src={service.getFilePreview(post.featuredImage)}
+                                alt={post.title}
+                                className="
+                                            max-w-full
+                                            max-h-125
+                                            w-auto
+                                            h-auto
+                                            rounded-xl
+                                            object-contain
+                                        "
+                            />
                         </div>
-                    )}
+
+                        {/* Edit / Delete */}
+                        {isAuthor && (
+                            <div className="shrink-0 flex gap-3">
+                                <Link to={`/edit-post/${post.$id}`}>
+                                    <Button className="
+                                                bg-blue-500
+                                                text-white
+                                                hover:bg-blue-400
+                                                dark:text-[#07111F]
+                                            ">
+                                        Edit
+                                    </Button>
+                                </Link>
+
+                                <Button
+                                    className="bg-red-500 opacity-80 hover:opacity-100 transition-opacity duration-200 dark:text-[#07111F]"
+                                    onClick={deletePost}
+                                >
+                                    Delete
+                                </Button>
+                            </div>
+                        )}
+
+                    </div>
+
                 </div>
-                <div className="w-full mb-6">
-                    <h1 className="text-2xl font-bold">{post.title}</h1>
+
+                {/* Title and content portion */}
+                <div className="w-full mb-8">
+                    <h1 className="
+                                text-5xl
+                                font-bold
+                                leading-tight
+                                mb-6
+                            ">
+                        {post.title}
+                    </h1>
                 </div>
-                <div className="browser-css">
+                <div className="browser-css text-lg leading-8">
                     {parse(post.content)}
                 </div>
             </Container>

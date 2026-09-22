@@ -139,6 +139,24 @@ export class Service {
     }
 
 
+    //get post of the logged in users
+    async getUserPosts(userId){
+        try{
+            return await this.tablesDB.listRows({
+                databaseId : conf.appwriteDatabaseId,
+                tableId : conf.appwriteTableId,
+                queries : [
+                    Query.equal("userId", [userId])
+                ]
+            })
+        }
+        catch(error){
+            console.error("Appwrite service :: getUserPosts :: error " , error) ;
+            return false;
+        }
+    }
+
+
 
 
 }
