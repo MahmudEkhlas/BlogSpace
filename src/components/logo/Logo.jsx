@@ -1,6 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
-import Dark from './dark';
+import Dark from './Dark';
 import Light from './Light';
 
 function Logo({ className = "" }) {

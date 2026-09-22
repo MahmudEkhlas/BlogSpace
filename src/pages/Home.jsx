@@ -3,7 +3,7 @@ import service from '../appwrite/config'
 import { useSelector } from 'react-redux';
 import { Container, PostCard } from '../components'
 import Landing from './homepages/Landing';
-import Noposts from './homepages/noposts';
+import Noposts from './homepages/Noposts';
 import { Link } from 'react-router';
 
 function Home() {

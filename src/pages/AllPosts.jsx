@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { setPosts } from '../store/postSlice'
 import service from '../appwrite/config'
 import { Container, PostCard } from '../components'
-import Noposts from './homepages/noposts';
+import Noposts from './homepages/Noposts';
 
 
 function AllPosts() {
