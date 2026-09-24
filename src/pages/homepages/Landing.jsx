@@ -138,29 +138,33 @@ function Landing() {
 
                 {/* Bottom pill */}
                 <div className="
-                    mx-auto
-                    mt-20
-                    flex
-                    w-fit
-                    items-center
-                    gap-8
-                    rounded-full
-                    border
-                    border-gray-200
-                    bg-white/80
-                    px-8
-                    py-4
-                    text-sm
-                    text-gray-600
-                    shadow-sm
-                    backdrop-blur-sm
-                    dark:border-white/10
-                    dark:bg-[#111c30]/80
-                    dark:text-gray-400
-                ">
+                            mx-auto
+                            mt-20
+                            flex
+                            w-fit
+                            max-w-full
+                            items-center
+                            gap-3
+                            rounded-full
+                            border
+                            border-gray-200
+                            bg-white/80
+                            px-5
+                            py-3
+                            text-sm
+                            text-gray-600
+                            shadow-sm
+                            backdrop-blur-sm
+                            dark:border-white/10
+                            dark:bg-[#111c30]/80
+                            dark:text-gray-400
+                        ">
                     <span>Write</span>
+                    <span>|</span>
                     <span>Share</span>
+                    <span>|</span>
                     <span>Explore</span>
+                    <span>|</span>
                     <span>Discover</span>
                 </div>
             </div>
